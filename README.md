@@ -14,7 +14,7 @@ This version will validate the contents of the URI:
 URI uri = new URI("http", null, "www.pamięć.pl", 80, null, null, null);
 ```
 
-RestTemplate underneath uses `java.net.URI` which causes the request to fail.
+RestTemplate [underneath uses](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/util/DefaultUriBuilderFactory.java#L400) `java.net.URI` which causes the request to fail.
 
 Check https://github.com/slonka/resttemplate-uri-accents/blob/master/src/main/java/net/slonka/resttemplateuriaccents/ResttemplateUriAccentsApplication.java
 for an example.
