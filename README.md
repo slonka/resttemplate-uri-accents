@@ -15,3 +15,6 @@ URI uri = new URI("http", null, "www.pamięć.pl", 80, null, null, null);
 ```
 
 RestTemplate underneath uses `java.net.URI` which causes the request to fail.
+
+Check https://github.com/slonka/resttemplate-uri-accents/blob/master/src/main/java/net/slonka/resttemplateuriaccents/ResttemplateUriAccentsApplication.java
+for an example.
